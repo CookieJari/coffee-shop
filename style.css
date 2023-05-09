@@ -95,11 +95,11 @@ footer {
   font-family: "Cabin", Arial, Helvetica, sans-serif;
 }
 
-a {
+.nav-option a {
   margin-left: 2px;
 }
-a:link,
-a:visited {
+.nav-option a:link,
+.nav-option a:visited {
   color: #f3e8e4;
   text-decoration: none;
 }
@@ -153,9 +153,23 @@ a:hover {
 
   text-align: left;
   font-size: 3em;
-  color: white;
+  color: rgb(241, 237, 229);
   text-shadow: 1px 2px #6363637e;
 }
 .main-text-content p {
   font-size: 0.85em;
+}
+
+.photo-credits {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  color: #222e24;
+}
+.photo-credits a {
+  color: #0c0f0c;
+}
+.photo-credits p {
+  margin: 0px;
 }
