@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 :root {
   --brand-color: #decac1;
@@ -11,6 +12,7 @@
 body {
   margin: 0px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  overflow-wrap: break-word;
 }
 
 /*------------- PAGE LAYOUT ---------*/
@@ -135,7 +137,7 @@ a:hover {
 }
 .main-container > div {
   border: 1px solid red;
-  height: 90vh;
+  height: 95vh;
 }
 /*-------- Home LAYOUT ---------*/
 .home-container {
@@ -144,6 +146,7 @@ a:hover {
   background-position: center;
 
   position: relative;
+  height: 95vh;
 }
 
 .main-text-content {
@@ -172,4 +175,93 @@ a:hover {
 }
 .photo-credits p {
   margin: 0px;
+}
+
+/*-------- Menu LAYOUT ---------*/
+
+.menu-container {
+  background-color: #15261e;
+}
+#menu {
+  height: auto;
+}
+
+.menu-card-container {
+  margin: 2%;
+  max-height: inherit;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-card {
+  width: max(300px, 80%);
+  height: min(600px, 90%);
+
+  justify-self: center;
+  align-self: center;
+  background-color: #cccccc;
+  margin-bottom: 2%;
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px #111f18;
+
+  display: grid;
+  grid-template-rows: 1.5fr 1fr;
+  padding: 0px 2em;
+
+  position: relative;
+
+  font-family: "Nanum Gothic", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dish-image {
+  width: clamp(200px, 70%, 300px);
+  height: clamp(240px, 90%, 250px);
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: 3px 3px 0px #19311f;
+  margin-top: 10px;
+}
+#cappuccino {
+  background-image: url(./images/Cappuccino.jpg);
+}
+#americano {
+  background-image: url(./images/Americano.jpg);
+}
+#matcha {
+  background-image: url(./images/Matcha.jpg);
+}
+
+.dish-description {
+  padding: 0px 2%;
+}
+.dish-name {
+  font-size: 1.2em;
+  text-align: center;
+}
+.dish-name > h2 {
+  margin-top: 0.8em;
+  margin-bottom: 0.7em;
+}
+.description > p {
+  margin: 0px;
+  margin-bottom: 4em;
+}
+.price {
+  position: absolute;
+  bottom: 1%;
+  right: 10%;
+}
+.price > p {
+  margin: 0px;
+  color: #0f1611;
 }
