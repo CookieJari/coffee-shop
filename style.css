@@ -349,3 +349,13 @@ button[type="submit"] {
   border: none;
   box-shadow: 7px 7px 0px #12201a;
 }
+
+/*------------- FOOTER LAYOUT ---------*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141615;
+  color: #34473ee0;
+}
