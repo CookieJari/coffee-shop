@@ -178,6 +178,10 @@ a:hover {
 .menu-container {
   background-color: #15261e;
 }
+.menu-container > h1 {
+  text-align: center;
+  color: #decac1;
+}
 #menu {
   height: auto;
 }
