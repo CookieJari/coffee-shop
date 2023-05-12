@@ -21,9 +21,6 @@ body {
   grid-template-columns: max(150px, 10vw) repeat(9, 1fr);
   grid-template-rows: 5vh repeat(20, 1fr) 5vh;
 }
-.page-container > * {
-  border: 1px solid black;
-}
 
 .header-container {
   grid-column: 2/-1;
@@ -136,7 +133,6 @@ a:hover {
   display: grid;
 }
 .main-container > div {
-  border: 1px solid red;
   height: 95vh;
 }
 /*-------- Home LAYOUT ---------*/
@@ -264,4 +260,92 @@ a:hover {
 .price > p {
   margin: 0px;
   color: #0f1611;
+}
+
+/*-------- Music LAYOUT ---------*/
+
+.music-container {
+  background-color: #15261e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-------- Jobs LAYOUT ---------*/
+
+.jobs-container {
+  background-color: #15261e;
+  color: #decac1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#jobs {
+  height: 100vh;
+}
+
+.form-container {
+  height: 90%;
+  width: max(550px, 40%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-text {
+  flex: 1;
+}
+.header-text > h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+.header-text > p {
+  font-size: 1.1em;
+}
+form {
+  flex: 2.5;
+  width: 100%;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 3px;
+}
+
+input {
+  background-color: #15261e;
+  box-shadow: none;
+  border: 1px solid #decac1;
+
+  color: #decac1;
+
+  height: 2em;
+}
+textarea {
+  background-color: #15261e;
+  box-shadow: none;
+  border: 1px solid #decac1;
+
+  color: #decac1;
+
+  font-size: 1.3em;
+}
+input[type="file"] {
+  border: none;
+}
+
+button[type="submit"] {
+  background-color: var(--brand-border);
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: var(--brand-color);
+  font-size: 1.5em;
+
+  border: none;
+  box-shadow: 7px 7px 0px #12201a;
 }

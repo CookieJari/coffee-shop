@@ -171,8 +171,70 @@
           </div>
         </div>
 
-        <div class="music-container" id="music"></div>
-        <div class="jobs-container" id="jobs"></div>
+        <div class="music-container" id="music">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6ziVCJnEm59?utm_source=generator"
+            width="95%"
+            height="100%"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="jobs-container" id="jobs">
+          <div class="form-container">
+            <div class="header-text">
+              <h1>Work With us</h1>
+              <p>
+                We would love to have you join our team. Please use the form
+                below to apply. Send your resume to our team so we can find the
+                best role that fits your profile.
+              </p>
+            </div>
+
+            <form action="" method="post">
+              <div class="form-item name">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+
+              <div class="form-item email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+
+              <div class="form-item number">
+                <label for="number">Phone Number</label>
+                <input type="tel" name="number" id="number" />
+              </div>
+
+              <div class="form-item email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+
+              <div class="form-item letter">
+                <label for="letter">Cover Letter</label>
+                <textarea
+                  name="letter"
+                  id="letter"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <div class="form-item resume">
+                <label for="resume">Resume</label>
+                <input type="file" name="resume" id="resume" />
+              </div>
+
+              <button type="submit">Apply</button>
+            </form>
+          </div>
+        </div>
       </div>
 
       <footer></footer>
