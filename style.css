@@ -182,24 +182,43 @@ a:hover {
   height: auto;
 }
 
+#cappuccino {
+  background-image: url(./images/Cappuccino.jpg);
+}
+#americano {
+  background-image: url(./images/Americano.jpg);
+}
+#matcha {
+  background-image: url(./images/Matcha.jpg);
+}
+#pancakes {
+  background-image: url(./images/Pancakes.jpg);
+}
+#waffles {
+  background-image: url(./images/Waffles.jpg);
+}
+#cake {
+  background-image: url(./images//Cake.jpg);
+}
+
 .menu-card-container {
   margin: 2%;
+  margin-top: 40px;
   max-height: inherit;
   display: grid;
   grid-template-columns: repeat(auto-fill, 500px);
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .menu-card {
   width: max(300px, 80%);
-  height: min(600px, 90%);
+  height: 500px;
 
   justify-self: center;
   align-self: center;
-  background-color: #cccccc;
-  margin-bottom: 2%;
+  background-color: #decac1;
+  margin-bottom: 30px;
   border-radius: 50px;
   box-shadow: 10px 10px 5px #111f18;
 
@@ -226,15 +245,6 @@ a:hover {
 
   box-shadow: 3px 3px 0px #19311f;
   margin-top: 10px;
-}
-#cappuccino {
-  background-image: url(./images/Cappuccino.jpg);
-}
-#americano {
-  background-image: url(./images/Americano.jpg);
-}
-#matcha {
-  background-image: url(./images/Matcha.jpg);
 }
 
 .dish-description {
@@ -267,8 +277,13 @@ a:hover {
 .music-container {
   background-color: #15261e;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#music {
+  height: 100vh;
+  padding-top: 50px;
 }
 
 /*-------- Jobs LAYOUT ---------*/
